@@ -5,24 +5,34 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Modifier ville</title>
+<!-- Inclure les fichiers Bootstrap via CDN -->
 <link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-</head>
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div>
-        <a class="navbar-brand" href="">
-            <img src="machine.png" style="margin-left: 80px;" alt="Logo" width="30" height="30">
-        </a>
-    </div>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="ville.jsp">Ville</a></li>
-            <li class="nav-item"><a class="nav-link" href="hotel.jsp">Hotel</a></li>
-            <li class="nav-item"><a class="nav-link" href="recherche.jsp">Hotel par ville</a></li>
-        </ul>
-    </div>
-</nav>
+   <nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Gestion hôtelière</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="#">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="hotel.jsp">Hôtel</a></li>
+					<li class="nav-item"><a class="nav-link" href="ville.jsp">Ville</a></li>
+					<li class="nav-item"><a class="nav-link" href="hotelByVille.jsp">Rechercher</a></li>
+
+				</ul>
+
+			</div>
+		</div>
+	</nav>
 
     <div class="container">
         <h1 class="text-center mb-4">Modifier ville</h1>
